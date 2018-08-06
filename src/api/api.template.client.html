@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href=
+            "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../services/api.service.client.js"></script>
+    <script src="api.controller.client.js"></script>
+
+    <title>Rev-Socia</title>
+</head>
+<body>
+    <h1>Review Portal</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9">
+                <input class="form-control" id="inputFld" placeholder="Search here"/>
+            </div>
+
+            <div class="col-sm-3">
+                <select id="selectFld" class="form-control">
+                    <option value="books">Books</option>
+                    <option value="cars">Cars</option>
+                    <option value="cell-phones-smartphones">Smartphones</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <button class="btn btn-success btn-block" id="searchFld">
+                Search
+            </button>
+        </div>
+        <table class="table">
+           <thead>
+           <tr>
+               <th>
+                    Product Name
+               </th>
+
+               <th>
+                   Average Rating
+               </th>
+
+               <th>
+                   Product Price
+               </th>
+
+               <th>
+                   Price Offered
+               </th>
+           </tr>
+
+           </thead>
+
+            <tbody class="productBody">
+            <tr class="productRowTemplate">
+                <td class="pName">
+                    <a href="">Name</a>
+                </td>
+
+                <td class="pRating">
+                    Rating
+                </td>
+
+                <td class="pPrice">
+                    Price
+                </td>
+
+                <td class="pOfferedPrice">
+                    Price Offered
+                </td>
+
+                <td>
+                    <button class="btn btn-primary detailBtn">Search</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+
+        <div class="tbody2">
+            <dl class="productRowTemplate2">
+                <dt class="proName">Product</dt>
+                <dd class="proDesc">Description</dd>
+            </dl>
+        </div>
+    </div>
+</body>
+</html>
